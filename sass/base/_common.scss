@@ -1,0 +1,33 @@
+
+/*container__________________________________COMMON-ELEMENTS__________________________________________container*/
+
+body {
+  font-family: roboto, sans-serif;
+  color: var(--black-color);
+}
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+ul {
+  list-style: none;
+}
+a {
+  font-style: normal;
+  text-decoration: none;
+}
+.container {
+  width: 1200px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin: 0 auto;
+}
+.section {
+  padding: 94px 0;
+}
+.work,
+.team {
+  display: flex;
+}
+

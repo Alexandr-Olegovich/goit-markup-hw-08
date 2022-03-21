@@ -1,0 +1,30 @@
+.features
+ {
+  display: flex;
+}
+.features__conteiner {
+   display: flex;
+  width: 270px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 120px;
+  width: 270px;
+  background-color: #f5f4fa;
+  margin-bottom: 30px;
+  border-radius: 4px;
+}
+/*icons__________________icons___________________icons*/
+
+.features__item {
+  width: 270px;
+  &:not(:last-child) {
+  margin-right: 30px;
+}
+}
+.features__text {
+  font-size: 14px;
+  line-height: calc(24 / 14);
+  letter-spacing: 0.03em;
+  color: var(--grey-color);
+}

@@ -1,0 +1,28 @@
+.work__item:not(:first-child),
+.team-item:not(:first-child) {
+  margin-left: 30px;
+}
+.section--no_padding_top {
+  padding-top: 0px;
+}
+.work__item {
+  position: relative;
+}
+.work__box {
+  position: absolute;
+  bottom: 0%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 70px;
+  width: 100%;
+  background-color: rgba(47, 48, 58, 0.8);
+}
+.work__text {
+  font-size: 14px;
+  line-height: calc(16 / 14);
+  text-align: center;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--white-color);
+}
