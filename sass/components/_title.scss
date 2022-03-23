@@ -1,12 +1,17 @@
 .main-section__title {
-  @include common(44px, 900, 1.36, 0.06em);
-  width: 696px; 
+  @include common(26px, 900, 42px, 0.06em);
+  padding: 0 25px;
+  width: 100%; 
   text-align: center;  
   text-transform: uppercase;
   color: var(--white-color);
   margin-left: auto;
   margin-right: auto;
-}
+  @media screen and (min-width: 1200px) {
+    @include common(44px, 900, 60px, 0.06em);
+    padding: 0 350px;
+  }}
+
 .section__title /*H-2_______________________________H-2___________________________________H-2*/
  {
   margin-bottom: 50px;
@@ -20,14 +25,17 @@
 .features__title,   /*H-3_________________________H-3__________________________________H-3*/
 .team__title {
   margin-bottom: 10px;
-  font-weight: 700;
-  font-size: 16px;
-  line-height: calc(16 / 14);
-  letter-spacing: 0.03em;}
-  /*_________________________________________end____________________________________*/
-.features__title {
-  text-transform: uppercase;
+  @include common(14px, 700, 16px, 0.03em);
+  //font-weight: 700;
+ // font-size: 16px;
+ //font-size: 14px;
+  //line-height: calc(16 / 14);
+ // letter-spacing: 0.03em;}
 }
+  /*_________________________________________end____________________________________*/
+//.features__title {
+ // text-transform: uppercase;
+
 .join__title {
   margin-bottom: 20px;
   font-style: normal;

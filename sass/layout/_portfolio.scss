@@ -8,19 +8,39 @@
     1px 4px 6px rgba(0, 0, 0, 0.16);
 } 
 }
-.button-list {
-  justify-content: center;
-  margin-bottom: 50px;
+.button__list {
+  justify-content: left;
+  margin-bottom: 40px;
   display: flex;
+  flex-wrap: wrap;
+   @media screen and (min-width: 768px) {      
+   justify-content: center;   
+  }
 }
-.button-list__item:not(:first-child) {
+.button__item:not(:first-child) {
   margin-left: 8px;
 }
+.button__item{
+  margin-bottom: 15px;
+  
+}
 .portfolio /* portfolio-card*/ {
+  justify-content: center;
   display: flex;
   flex-wrap: wrap;
 }
 .portfolio__item {
+  margin-bottom: 30px;
+  @media screen and (min-width: 768px) { 
+    width: calc(100% / 2 - 30px); 
+    margin-bottom: 30px;    
+   &:nth-child(2n+2) {      
+     margin-left: 30px;     
+   }   
+  }
+  @media screen and (min-width: 1200px) {      
+   justify-content: center;  
+  margin-bottom: 30px;
   margin-left: 30px;
   &:nth-child(3n + 1) {
   margin-left: 0px;
@@ -28,7 +48,7 @@
 &:nth-child(n + 4) {
   margin-top: 30px;
 }
-}
+}}
 
 .card-box /* card-box-conteiner-portfolio */ {
   border-bottom-width: 1px;
