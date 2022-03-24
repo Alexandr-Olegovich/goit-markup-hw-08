@@ -7,9 +7,15 @@
   color: var(--white-color);
   margin-left: auto;
   margin-right: auto;
+   @media screen and (min-width: 768px) {
+    @include common(26px, 900, 42px, 0.06em);
+    padding: 0 175px;
+    text-align: center;
+  }
   @media screen and (min-width: 1200px) {
     @include common(44px, 900, 60px, 0.06em);
-    padding: 0 350px;
+    padding: 0 320px;
+    
   }}
 
 .section__title /*H-2_______________________________H-2___________________________________H-2*/
