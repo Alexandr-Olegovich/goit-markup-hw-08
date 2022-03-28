@@ -1,7 +1,14 @@
 .header-container {
   display: flex;
-  justify-content: space-between;
-  align-items: baseline;
+  justify-content: space-around;
+  @media screen and (min-width:768px) { 
+     
+     flex-direction: row;
+     align-items: center; 
+     }
+     @media screen and (min-width:1200px) { 
+     display: flex; 
+    justify-content: space-between; }     
 }
 .contact__link,
 .navigation
@@ -12,22 +19,54 @@
 .nav, 
 .contact
  {
-  display: none;
+  display: none;  
+  @media screen and (min-width:768px) { 
+     display: flex;      
+  }
+  @media screen and (min-width:1200px) { 
+     display: flex;   
+     flex-direction: row;  
+  }
 }
+.contact__position { 
+  align-items: baseline;
+  @media screen and (min-width:768px) { 
+     display: flex;  
+     flex-direction: column; 
+  } 
+  @media screen and (min-width:1200px) { 
+     display: flex;  
+     flex-direction: row; 
+     justify-content: flex-end;
+  } 
+ }
+
 .header {  
   background-color: var(--white-color);
   border-bottom: 1px solid #ececec;
 }
 .nav--margin {
-  margin-left: 93px; 
-}
-.contact__position {
- margin-left: auto;
-  align-items: center;
+  @media screen and (min-width:768px) { 
+     margin-left: auto;     
   }
+  @media screen and (min-width:1200px) { 
+     margin-left: 93px;     
+  }   
+}
 
 .nav__item, .contact__item:not(:first-child) {
-  margin-left: 50px;
+  margin-left: 50px;  
+}
+.contact__item{
+  @media screen and (min-width:768px) {
+    &:last-child{
+      margin-left: 0px;  }
+  }
+  @media screen and (min-width:1200px) { 
+    &:last-child {
+      margin-left: 50px;
+    }
+  }   
 }
 /*ICONS__________________________________HEADER-ICONS_____________________________________ICONS*/
 .contact__icon {
@@ -42,6 +81,12 @@
   fill: var(--black-color);
   &:hover, &focus{
   fill: var(--blue-color);}
+  @media screen and (min-width:768px) { 
+     display: none;     
+  }
+  @media screen and (min-width:1200px) { 
+     display: none;     
+  }
 }
 
 .nav__link,
@@ -61,8 +106,12 @@
   text-decoration: none;  
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);  
 }
+
 .contact__link{
   color: var(--grey-color);
+  @media screen and (min-width:768px) { 
+       padding: 0px 0;   
+  }
 }
 .nav__link--current {
   position: relative;
