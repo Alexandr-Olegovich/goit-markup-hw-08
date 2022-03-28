@@ -105,13 +105,15 @@
 }
 .footer__block{
   display: flex;
+  flex-direction: column;
    @media screen and (min-width:768px) { 
      display: flex;  
      flex-direction: column; 
    text-align: center;
   }
    @media screen and (min-width:1200px) { 
-      margin-left: 73px;
+      margin-left: 83px;
+    justify-content: left;
     text-align: left;
    
   }
@@ -138,17 +140,16 @@
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: #ffffff;
-   @media screen and (min-width:480px) {
-     display: flex;
+   @media screen and (min-width:480px) {     
     margin-bottom: 20px; 
-    justify-content: center;  
+     text-align: center;  
   }
   @media screen and (min-width:768px) {
     margin-bottom: 20px;   
     text-align: center;   
   }
   @media screen and (min-width:1200px) { 
-    display: flex; 
+    
     text-align: left;
    margin-bottom: 20px;  
 }}
