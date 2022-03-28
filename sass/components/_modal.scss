@@ -12,6 +12,12 @@
 }
 
 .modal {
+  @media screen and (min-width: 480px) {
+     width: 450px;
+  }
+   @media screen and (min-width: 768px) {
+     width: 450px;
+  }
   width: 528px;
   min-height: 581px;
   background: var(--white-color);
@@ -38,6 +44,12 @@
   fill: var(--blue-color);
 }}
 .user-info__input {
+  @media screen and (min-width: 480px) {
+     width: 370px;
+  }
+   @media screen and (min-width: 768px) {
+     width: 370px;
+  }
   width: 448px;
   height: 40px;
   border-radius: 4px;
@@ -89,6 +101,14 @@
   border-color: rgba(33, 33, 33, 0.2);
 }
 .checkbox-text {
+  @media screen and (min-width: 480px) {
+    @include common(12px, 400, 14px, 0.03em);
+     color: var(--grey-color);
+  }
+   @media screen and (min-width: 768px) {
+     @include common(12px, 400, 14px, 0.03em);
+     color: var(--grey-color);
+  }  
   font-weight: 400;
   font-size: 14px;
   line-height: 1.71;

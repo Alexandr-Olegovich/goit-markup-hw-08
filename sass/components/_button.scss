@@ -97,3 +97,16 @@
   border: none;  
   
 }
+.modal-menu__btn{  
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  background-color: transparent;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  cursor: pointer;
+  fill: var(--blue-color);
+}
+
