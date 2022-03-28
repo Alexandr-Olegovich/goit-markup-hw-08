@@ -127,24 +127,61 @@
           <h2 class="section__title">Чем мы занимаемся</h2>
           <ul class="work">
             <li class="work__item">                                          
-              <img src="./images/box_1.jpg" alt="разработка_по" width="370" height="294" />
+              <picture>
+                <source
+                srcset="./images/work1x.jpg,
+                        ./images/work2x.jpg"
+                        media="(min-width: 1200px)">
+                        <source
+                srcset="./images/work1x.jpg,
+                        ./images/work2x.jpg"
+                        media="(min-width: 768px)">
+                        <source
+                srcset="./images/work1x.jpg,
+                        ./images/work2x.jpg"
+                        media="(min-width: 320px)">
+                        <img src="./images/box_1.jpg" alt="work_1" />
+              </picture>
               <div class="work__box"> 
               <p class="work__text">Десктопные приложения</p>
               </div>
             </li>
             <li class="work__item">
-              <img
-                src="./images/box_2.jpg"
-                alt="разработка_по_для_мобильных"
-                width="370"
-                height="294"
-              />
+              <picture>
+                <source
+                srcset="./images/mobile1x.jpg,
+                        ./images/mobile2x.jpg "
+                        media="(min-width: 1200px)">
+                        <source
+                srcset="./images/mobile1x.jpg,
+                        ./images/mobile2x.jpg "
+                        media="(min-width: 768px)">
+                        <source
+                srcset="./images/mobile1x.jpg,
+                        ./images/mobile2x.jpg"
+                        media="(min-width: 320px)">
+                        <img src="./images/box_2.jpg" alt="work_1" />
+              </picture>
               <div class="work__box">
               <p class="work__text">Мобильные приложения</p>
               </div>
             </li>
             <li class="work__item">
-              <img src="./images/box_3.jpg" alt="разработка_дизайна" width="370" height="294" />
+              <picture>
+                <source
+                srcset="./images/job1x.jpg,
+                        ./images/job2x.jpg "
+                        media="(min-width: 1200px)">
+                        <source
+                srcset="./images/job1x.jpg,
+                        ./images/job2x.jpg "
+                        media="(min-width: 768px)">
+                        <source
+                srcset="./images/job1x.jpg,
+                        ./images/job2x.jpg"
+                        media="(min-width: 320px)">
+                        <img src="./images/box_3.jpg" alt="work_1" />
+              </picture>
               <div class="work__box">
               <p class="work__text">Дизайнерские решения</p>
               </div>
