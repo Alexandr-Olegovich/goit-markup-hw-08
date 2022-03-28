@@ -423,8 +423,14 @@ a {
   margin-bottom: 15px;
 }
 
-.portfolio {
+.correction {
+  display: flex;
+  flex-direction: column;
   justify-content: center;
+}
+
+.portfolio {
+  justify-content: left;
   display: flex;
   flex-wrap: wrap;
 }
