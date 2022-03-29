@@ -561,32 +561,27 @@ a {
   flex-wrap: wrap;
 }
 
-.portfolio__item:not(:last-child) {
+.portfolio__item {
   margin-bottom: 30px;
+  margin-left: 30px;
 }
 
 @media screen and (min-width: 768px) {
-  .portfolio__item:not(:last-child) {
+  .portfolio__item {
     width: calc((100% - 30px) / 2);
     margin-bottom: 30px;
   }
-  .portfolio__item:not(:last-child):nth-child(2n+2) {
+  .portfolio__item:nth-child(2n+2) {
     margin-left: 30px;
   }
 }
 
 @media screen and (min-width: 1200px) {
-  .portfolio__item:not(:last-child) {
-    width: calc(100% / 3 - 30px);
-    justify-content: center;
-    margin-bottom: 30px;
-    margin-left: 30px;
+  .portfolio__item {
+    width: calc((100% - 30px) / 3);
   }
-  .portfolio__item:not(:last-child):nth-child(3n + 1) {
+  .portfolio__item:not(:nth-child(3n+1)) {
     margin-left: 0px;
-  }
-  .portfolio__item:not(:last-child):nth-child(n + 4) {
-    margin-top: 30px;
   }
 }
 
