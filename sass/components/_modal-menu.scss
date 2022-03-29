@@ -1,7 +1,7 @@
 .modal-menu {
   font-family: Roboto;
   width: 480px;
-  min-height: 100%;
+  min-height: 400px;
   background: var(--white-color);
   border-radius: 4px;
   position: absolute;
@@ -55,6 +55,7 @@
     display: flex;
     flex-direction: row;
     margin-left: 40px;
+    margin-bottom: 48px;
     @include common (18px, 500, 22px, 0.02em);
     color: var(--blue-color);
 }

@@ -1,6 +1,5 @@
 .main-section__title {
-  @include common(26px, 900, 42px, 0.06em);
-  
+  @include common(26px, 900, 42px, 0.06em);  
   width: 360px; 
   text-align: center;  
   text-transform: uppercase;
@@ -60,6 +59,7 @@
   margin-bottom: 12px;
 }
 .card-box__title /* portfolio h2*/ {
+  color: var(--black-color);
   margin-bottom: 4px;
   font-weight: 700;
   font-size: 18px;
