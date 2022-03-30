@@ -580,9 +580,6 @@ a {
   .portfolio__item {
     width: calc((100% - 30px) / 3);
   }
-  .portfolio__item:not(:nth-child(3n+1)) {
-    margin-left: 0px;
-  }
 }
 
 .card-box {
