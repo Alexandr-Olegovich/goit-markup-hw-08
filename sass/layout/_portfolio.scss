@@ -19,16 +19,15 @@
   justify-content: left;
   display: flex;
   flex-wrap: wrap;
+  margin-top: -15px;
+  margin-bottom: 50px;
    @media screen and (min-width: 768px) {      
    justify-content: center;   
   }
 }
-.button__item:not(:first-child) {
-  margin-left: 8px;
-}
-.button__item{
-  margin-bottom: 15px;
-  
+.button__item { margin-top: 15px;}
+.button__item:not(:last-child) {
+  margin-right: 8px;  
 }
 .correction{
   display: flex;
@@ -36,21 +35,30 @@
   justify-content: center;
 }
 .portfolio /* portfolio-card*/ {
-  display: flex;
-  flex-wrap: wrap;
+  margin-bottom: -30px;
+  margin-left: -30px;
+  @media screen and (min-width: 768px) { 
+    display: flex;
+    flex-wrap: wrap; } 
+    @media screen and (min-width: 1200px) { 
+    display: flex;
+    flex-wrap: wrap; }
 }
-.portfolio__item {  
-    margin-bottom: 30px; 
-    margin-left: 30px;  
+.portfolio__item { 
+  &:not(:last-child){
+    margin-bottom: 30px;
+  }
   @media screen and (min-width: 768px) { 
     width: calc((100% - 30px) / 2); 
-    margin-bottom: 30px;    
-   &:nth-child(2n+2) {      
-     margin-left: 30px;     
-   } 
-  }
+    &:nth-child(2n){
+    margin-left: 30px;}
+    margin-bottom: 30px;} 
+  
   @media screen and (min-width: 1200px) {
-    width: calc((100% - 30px) / 3); 
+    margin-left: 30px;
+    width: calc((100% - 90px) / 3); 
+    &:nth-child(3n+1){
+    margin-left: 0px;}
 }}
 
 .card-box /* card-box-conteiner-portfolio */ {
