@@ -79,6 +79,14 @@ a {
   display: flex;
 }
 
+.container-menu {
+  max-width: 480px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin: 0 auto;
+  height: 100vh;
+}
+
 .main-section__title {
   font-size: 26px;
   font-weight: 900;
