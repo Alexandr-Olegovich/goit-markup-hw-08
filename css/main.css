@@ -835,16 +835,8 @@ a {
   color: var(--white-color);
 }
 
-@media screen and (min-width: 480px) {
-  .section--no_padding_top {
-    display: none;
-  }
-}
-
-@media screen and (min-width: 768px) {
-  .section--no_padding_top {
-    display: none;
-  }
+.section--no_padding_top {
+  display: none;
 }
 
 @media screen and (min-width: 1200px) {
