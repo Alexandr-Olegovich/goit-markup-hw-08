@@ -1,48 +1,49 @@
 .features //list
- {
-    @media screen and (min-width: 768px) {      
-   //align-items: center;
-   justify-content: center;   
-   display: flex;
-  flex-wrap: wrap;}
- @media screen and (min-width: 1200px) {
-   width: 100%;
-   
- }
-    }
-.features__conteiner {   
-   display: flex;
+{
+  @media screen and (min-width: 768px) {
+    //align-items: center;
+    justify-content: center;
+    display: flex;
+    flex-wrap: wrap;
+  }
+  @media screen and (min-width: 1200px) {
+    width: 1200px;
+    flex-wrap: nowrap;
+  }
+}
+.features__conteiner {
+  display: flex;
   width: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 120px;  
+  height: 120px;
   background-color: #f5f4fa;
   margin-bottom: 30px;
   border-radius: 4px;
   @media screen and (min-width: 768px) {
     width: 320px;
   }
-   @media screen and (min-width: 1200px) {
+  @media screen and (min-width: 1200px) {
     width: 100%;
   }
 }
 /*icons__________________icons___________________icons*/
 
-.features__item {  
-  width: 100%;  
-  &:not(:last-child){
-    margin-bottom: 30px;
-  }
+.features__item {
+  width: 100%;
   @media screen and (min-width: 768px) {
-   width: calc(100% / 2 - 30px);  
-  &:nth-child(2n+2) {
-  margin-left: 30px;}
-}
- @media screen and (min-width: 1200px) {
-    width: calc(100% / 4 - 30px); 
-    &:nth-child(n+2) {
-  margin-left: 30px;}   
+    width: calc((100% - 30px) / 2);
+    &:nth-child(2n + 2) {
+      margin-left: 30px;
+    }
+  }
+  @media screen and (min-width: 1200px) {
+    width: calc((100% - 30px) / 4);
+    &:nth-child(n + 2) {
+      margin-left: 30px;
+    }
+    padding: 0 -15px;
   }
 }
 .features__text {

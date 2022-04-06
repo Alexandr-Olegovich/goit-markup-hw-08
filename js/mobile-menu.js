@@ -1,7 +1,7 @@
 (() => {
   const expo = {
     openMenuBtn: document.querySelector(".data-menu-open"),
-    closeMenuBtn: document.querySelector(".data-menu-close"),
+    closeMenuBtn: document.querySelector(".modal-menu__btn--close"),
     Menu: document.querySelector(".data-menu"),
   };
 
