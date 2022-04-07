@@ -22,7 +22,7 @@
   margin-bottom: 30px;
   border-radius: 4px;
   @media screen and (min-width: 768px) {
-    width: 320px;
+    width: 100%;
   }
   @media screen and (min-width: 1200px) {
     width: 100%;
@@ -32,6 +32,11 @@
 
 .features__item {
   width: 100%;
+   @media screen and (min-width: 480px) {
+    &:not(:last-child){
+      margin-bottom: 30px;
+    }
+  }
   @media screen and (min-width: 768px) {
     width: calc((100% - 30px) / 2);
     &:nth-child(2n + 2) {
