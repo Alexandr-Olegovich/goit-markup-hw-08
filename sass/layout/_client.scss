@@ -1,22 +1,21 @@
 .clients {
-   @media screen and (min-width: 480px) { 
-     display: flex;  
-  flex-wrap: wrap;}
-   @media screen and (min-width: 768px) { 
-     display: flex;  
-  flex-wrap: wrap;}
+  display: flex;  
+  flex-wrap: wrap; 
  @media screen and (min-width: 1200px) {
   display: flex;
 }}
 .clients__item {
-  width: calc((100% - 30px) / 2);
-  height: 92px;
   margin-bottom: 30px;
-  &:nth-last-child(-n+2){
-    margin-bottom: 0px;
-  }
+  height: 92px;
+  width: calc((100% - 30px) / 2);
   &:nth-child(2n) {
   margin-left: 30px;}
+   @media screen and (min-width: 480px) {
+  margin-bottom: 30px;
+  &:nth-last-child(-n+2){
+    margin-bottom: 0px; }
+  &:nth-child(2n) {
+  margin-left: 30px;}}
 @media screen and (min-width: 768px) {
    width: calc((100% - 60px) / 3);
    margin-left: 30px; 
