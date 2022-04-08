@@ -109,6 +109,8 @@
   }
 }
 .footer__block{
+  margin-top: 60px;
+  text-align: center;
   @media screen and (min-width:480px) { 
     margin-top: 60px;
   display: flex;
@@ -141,7 +143,6 @@
 }
 
 .footer-email__text { 
-  margin-bottom: 20px;
   text-align: center;
   font-style: normal; 
   font-size: 14px; 
@@ -149,8 +150,8 @@
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: #ffffff;
-   @media screen and (min-width:480px) {     
-    margin-bottom: 20px; 
+   @media screen and (min-width:480px) { 
+       margin-bottom: 20px;
      text-align: center;  
   }
   @media screen and (min-width:768px) {
@@ -158,9 +159,7 @@
     text-align: center;   
   }
   @media screen and (min-width:1200px) { 
-    
     text-align: left;
-   margin-bottom: 20px;  
 }}
 .footer-email__input::placeholder {
   padding-left: 16px;

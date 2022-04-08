@@ -1247,6 +1247,11 @@ a {
   }
 }
 
+.footer__block {
+  margin-top: 60px;
+  text-align: center;
+}
+
 @media screen and (min-width: 480px) {
   .footer__block {
     margin-top: 60px;
@@ -1289,7 +1294,6 @@ a {
 }
 
 .footer-email__text {
-  margin-bottom: 20px;
   text-align: center;
   font-style: normal;
   font-size: 14px;
@@ -1316,7 +1320,6 @@ a {
 @media screen and (min-width: 1200px) {
   .footer-email__text {
     text-align: left;
-    margin-bottom: 20px;
   }
 }
 
